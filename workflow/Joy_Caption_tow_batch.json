@@ -1,0 +1,340 @@
+{
+  "last_node_id": 9,
+  "last_link_id": 9,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "Joy_extra_options",
+      "pos": {
+        "0": 271.22216796875,
+        "1": 280
+      },
+      "size": {
+        "0": 643.6668701171875,
+        "1": 451
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "Extra_Options",
+          "type": "Extra_Options",
+          "links": [
+            7
+          ],
+          "slot_index": 0,
+          "label": "附加选项"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Joy_extra_options"
+      },
+      "widgets_values": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": 5,
+      "type": "ShowText|pysssss",
+      "pos": {
+        "0": 1351.22216796875,
+        "1": 190
+      },
+      "size": {
+        "0": 315,
+        "1": 76
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 9,
+          "widget": {
+            "name": "text"
+          },
+          "label": "文本"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6,
+          "label": "字符串"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "result: finished count: 4, error count: 0"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "Joy_caption_two_load",
+      "pos": {
+        "0": 271.22216796875,
+        "1": 170
+      },
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "JoyTwoPipeline",
+          "type": "JoyTwoPipeline",
+          "links": [
+            5,
+            8
+          ],
+          "slot_index": 0,
+          "label": "JoyCaptionTwo"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Joy_caption_two_load"
+      },
+      "widgets_values": [
+        "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "ShowText|pysssss",
+      "pos": {
+        "0": 1384.22216796875,
+        "1": 462.0001220703125
+      },
+      "size": {
+        "0": 315,
+        "1": 76
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 6,
+          "widget": {
+            "name": "text"
+          },
+          "label": "文本"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6,
+          "label": "字符串"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "result: finished count: 4, error count: 0"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "Batch_joy_caption_two",
+      "pos": {
+        "0": 990.22216796875,
+        "1": 672.0001220703125
+      },
+      "size": {
+        "0": 315,
+        "1": 154
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "joy_two_pipeline",
+          "type": "JoyTwoPipeline",
+          "link": 5,
+          "label": "JoyCaptionTwo"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            6
+          ],
+          "slot_index": 0,
+          "label": "处理结果"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Batch_joy_caption_two"
+      },
+      "widgets_values": [
+        "F:\\Picture\\Joy_Caption",
+        "",
+        "Training Prompt",
+        "160",
+        true
+      ]
+    },
+    {
+      "id": 8,
+      "type": "Batch_joy_caption_two_advanced",
+      "pos": {
+        "0": 952.22216796875,
+        "1": 186
+      },
+      "size": {
+        "0": 378,
+        "1": 390
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "joy_two_pipeline",
+          "type": "JoyTwoPipeline",
+          "link": 8
+        },
+        {
+          "name": "extra_options",
+          "type": "Extra_Options",
+          "link": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            9
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Batch_joy_caption_two_advanced"
+      },
+      "widgets_values": [
+        "F:\\Picture\\Joy_Caption_Advanced",
+        "",
+        false,
+        "",
+        1,
+        "Descriptive",
+        "long",
+        "",
+        "",
+        false,
+        0.9,
+        0.6,
+        "",
+        ""
+      ]
+    }
+  ],
+  "links": [
+    [
+      5,
+      3,
+      0,
+      6,
+      0,
+      "JoyTwoPipeline"
+    ],
+    [
+      6,
+      6,
+      0,
+      7,
+      0,
+      "STRING"
+    ],
+    [
+      7,
+      1,
+      0,
+      8,
+      1,
+      "Extra_Options"
+    ],
+    [
+      8,
+      3,
+      0,
+      8,
+      0,
+      "JoyTwoPipeline"
+    ],
+    [
+      9,
+      8,
+      0,
+      5,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "Group",
+      "bounding": [
+        251,
+        90,
+        1477,
+        806
+      ],
+      "color": "#3f789e",
+      "font_size": 22,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1,
+      "offset": [
+        0,
+        0
+      ]
+    }
+  },
+  "version": 0.4
+}

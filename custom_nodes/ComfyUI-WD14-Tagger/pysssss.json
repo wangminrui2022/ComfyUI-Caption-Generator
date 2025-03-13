@@ -1,0 +1,16 @@
+{
+	"name": "WD14Tagger",
+	"logging": false,
+	"settings": {
+		"model": "wd-v1-4-moat-tagger-v2",
+		"threshold": 0.35,
+		"character_threshold": 0.85,
+		"exclude_tags": "",
+		"ortProviders": ["CUDAExecutionProvider", "CPUExecutionProvider"],
+		"HF_ENDPOINT": "https://huggingface.co"
+	},
+	"models": {
+		"wd-eva02-large-tagger-v3": "{HF_ENDPOINT}/SmilingWolf/wd-eva02-large-tagger-v3",
+		"wd-v1-4-convnext-tagger-v2": "{HF_ENDPOINT}/SmilingWolf/wd-v1-4-convnext-tagger-v2"
+	}
+}

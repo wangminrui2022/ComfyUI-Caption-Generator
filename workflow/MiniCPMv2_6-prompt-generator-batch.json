@@ -1,0 +1,254 @@
+{
+  "last_node_id": 29,
+  "last_link_id": 32,
+  "nodes": [
+    {
+      "id": 24,
+      "type": "ShowText|pysssss",
+      "pos": {
+        "0": 1370.80810546875,
+        "1": 250.87672424316406
+      },
+      "size": {
+        "0": 533.3333740234375,
+        "1": 542.4242553710938
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 27,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "\"Imagine a serene coastal village nestled at the foot of towering, mist-shrouded mountains. In the heart of this picturesque setting, a quaint red wooden building with a sloping roof sits adjacent to a sturdy wooden dock. A white fishing boat named 'Elltor Nusfjord' is moored at the dock, its hull adorned with green accents and equipped with various navigational instruments. The calm waters reflect the overcast sky, adding to the tranquil atmosphere. The village's rustic charm is further accentuated by the lush greenery that blankets the mountainous backdrop, creating a harmonious blend of human habitation and natural beauty.\"",
+        "In a futuristic, neon-lit cityscape, a solitary figure stands poised on a rooftop, bathed in the glow of purple and blue lights. The individual, clad in a sleek, form-fitting black outfit, strikes a dramatic pose with one hand raised to their head, as if shielding their eyes from the radiant hues. Their gaze is directed towards the camera, exuding an air of enigmatic confidence. The background is a blur of motion, suggesting the swift passage of time or perhaps the rapid movement of the city's inhabitants. The overall atmosphere is one of mystery and intrigue, as if the figure is a guardian of this vibrant, otherworldly metropolis."
+      ]
+    },
+    {
+      "id": 18,
+      "type": "Prompt_Generator",
+      "pos": {
+        "0": 336,
+        "1": 176
+      },
+      "size": {
+        "0": 467.8489074707031,
+        "1": 527.3383178710938
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": null,
+          "label": "images",
+          "shape": 7
+        },
+        {
+          "name": "filenames",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "filenames"
+          },
+          "label": "filenames"
+        },
+        {
+          "name": "captions",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "captions"
+          },
+          "label": "captions"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 6,
+          "label": "images"
+        },
+        {
+          "name": "filenames",
+          "type": "STRING",
+          "links": [
+            24
+          ],
+          "slot_index": 1,
+          "shape": 6,
+          "label": "filenames"
+        },
+        {
+          "name": "captions",
+          "type": "STRING",
+          "links": [
+            25
+          ],
+          "slot_index": 2,
+          "shape": 6,
+          "label": "captions"
+        },
+        {
+          "name": "folder_path",
+          "type": "STRING",
+          "links": [],
+          "slot_index": 3,
+          "shape": 3,
+          "label": "folder_path"
+        },
+        {
+          "name": "batch_size",
+          "type": "INT",
+          "links": [],
+          "slot_index": 4,
+          "shape": 3,
+          "label": "batch_size"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Prompt_Generator"
+      },
+      "widgets_values": [
+        "F:\\Picture\\MiniCPM",
+        "long_prompt",
+        2048,
+        3,
+        0.7,
+        1.05,
+        "",
+        "",
+        "",
+        [
+          false,
+          true
+        ],
+        [
+          false,
+          true
+        ],
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "id": 21,
+      "type": "Save_Prompts",
+      "pos": {
+        "0": 923,
+        "1": 340
+      },
+      "size": {
+        "0": 315,
+        "1": 154
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "filenames",
+          "type": "STRING",
+          "link": 24,
+          "widget": {
+            "name": "filenames"
+          }
+        },
+        {
+          "name": "captions",
+          "type": "STRING",
+          "link": 25,
+          "widget": {
+            "name": "captions"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "captions",
+          "type": "STRING",
+          "links": [
+            27
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Save_Prompts"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "F:\\Picture\\MiniCPM",
+        "MiniCPMv2_6",
+        "overwrite"
+      ]
+    }
+  ],
+  "links": [
+    [
+      24,
+      18,
+      1,
+      21,
+      0,
+      "STRING"
+    ],
+    [
+      25,
+      18,
+      2,
+      21,
+      1,
+      "STRING"
+    ],
+    [
+      27,
+      21,
+      0,
+      24,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.1000000000000003,
+      "offset": [
+        -281.9191117720173,
+        -14.907637850491541
+      ]
+    },
+    "workspace_info": {
+      "id": "rQ-dle4yMjA_LxTHZTZzn"
+    }
+  },
+  "version": 0.4
+}

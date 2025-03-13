@@ -1,0 +1,482 @@
+{
+  "last_node_id": 9,
+  "last_link_id": 7,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "Joy_caption_two",
+      "pos": {
+        "0": 577.449462890625,
+        "1": 177.5354766845703
+      },
+      "size": {
+        "0": 315,
+        "1": 126
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "joy_two_pipeline",
+          "type": "JoyTwoPipeline",
+          "link": 1,
+          "label": "JoyCaptionTwo"
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 2,
+          "label": "图像"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            3
+          ],
+          "slot_index": 0,
+          "label": "提示词"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Joy_caption_two"
+      },
+      "widgets_values": [
+        "Descriptive",
+        "140",
+        false
+      ]
+    },
+    {
+      "id": 7,
+      "type": "Joy_extra_options",
+      "pos": {
+        "0": 948.4666748046875,
+        "1": 243.53334045410156
+      },
+      "size": {
+        "0": 640.561767578125,
+        "1": 470.9009704589844
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "Extra_Options",
+          "type": "Extra_Options",
+          "links": [
+            5
+          ],
+          "label": "附加选项"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Joy_extra_options"
+      },
+      "widgets_values": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": 5,
+      "type": "Joy_caption_two_advanced",
+      "pos": {
+        "0": 1612.466552734375,
+        "1": 130.53334045410156
+      },
+      "size": {
+        "0": 315,
+        "1": 242
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "joy_two_pipeline",
+          "type": "JoyTwoPipeline",
+          "link": 4,
+          "label": "JoyCaptionTwo"
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 6,
+          "label": "图像"
+        },
+        {
+          "name": "extra_options",
+          "type": "Extra_Options",
+          "link": 5,
+          "label": "附加选项"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            7
+          ],
+          "slot_index": 0,
+          "label": "提示词"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Joy_caption_two_advanced"
+      },
+      "widgets_values": [
+        "MidJourney",
+        "260",
+        "",
+        "",
+        false,
+        0.9,
+        0.6
+      ]
+    },
+    {
+      "id": 3,
+      "type": "LoadImage",
+      "pos": {
+        "0": 199.44940185546875,
+        "1": 279.5355224609375
+      },
+      "size": {
+        "0": 350.9436950683594,
+        "1": 314
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2
+          ],
+          "label": "图像"
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "label": "遮罩"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "photo-1740953794738-5cc7f8588d1e.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "LoadImage",
+      "pos": {
+        "0": 1599,
+        "1": 370
+      },
+      "size": {
+        "0": 210,
+        "1": 336.5890197753906
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            6
+          ],
+          "label": "图像"
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "label": "遮罩"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "photo-1740953794738-5cc7f8588d1e.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "Joy_caption_two_load",
+      "pos": {
+        "0": 949,
+        "1": 144
+      },
+      "size": {
+        "0": 639.5408325195312,
+        "1": 58.497196197509766
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "JoyTwoPipeline",
+          "type": "JoyTwoPipeline",
+          "links": [
+            4
+          ],
+          "label": "JoyCaptionTwo"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Joy_caption_two_load"
+      },
+      "widgets_values": [
+        "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "Joy_caption_two_load",
+      "pos": {
+        "0": 194,
+        "1": 174
+      },
+      "size": {
+        "0": 357.947265625,
+        "1": 58
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "JoyTwoPipeline",
+          "type": "JoyTwoPipeline",
+          "links": [
+            1
+          ],
+          "label": "JoyCaptionTwo"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Joy_caption_two_load"
+      },
+      "widgets_values": [
+        "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit"
+      ]
+    },
+    {
+      "id": 9,
+      "type": "ShowText|pysssss",
+      "pos": {
+        "0": 1818.466552734375,
+        "1": 377.5333251953125
+      },
+      "size": {
+        "0": 297.46295166015625,
+        "1": 329.3807067871094
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 7,
+          "widget": {
+            "name": "text"
+          },
+          "label": "文本"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "slot_index": 0,
+          "shape": 6,
+          "label": "字符串"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "photograph of a cozy, dimly-lit library or study room with a warm, inviting atmosphere. The room is filled with wooden tables and chairs, all facing a massive bookshelf that takes up the entire background. The bookshelf is packed with books of various sizes and colors, some with visible titles. The lighting is soft and warm, creating a gentle glow that highlights the book spines. The walls are a muted gray, adding to the serene ambiance. A small, framed picture and a few decorative items are placed on the bookshelf. The foreground features a few wooden tables with scattered books, a notepad, and a pen, indicating an active workspace. The camera likely used is a DSLR with a moderate depth of field, keeping the bookshelf in sharp focus while slightly blurring the tables and chairs. Aperture around f/4, shutter speed around 1/60 sec, ISO around 400. The overall feel is one of intellectual curiosity and comfort. The photo captures the essence of a quiet, studious environment, perfect for reading or research."
+      ]
+    },
+    {
+      "id": 4,
+      "type": "ShowText|pysssss",
+      "pos": {
+        "0": 581.449462890625,
+        "1": 350.5355224609375
+      },
+      "size": {
+        "0": 304.5310363769531,
+        "1": 218.3123016357422
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 3,
+          "widget": {
+            "name": "text"
+          },
+          "label": "文本"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6,
+          "label": "字符串"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "This photograph captures the interior of a cozy, well-lit library or study space. The room features an expansive, black metal bookshelf filled with a variety of books, their spines facing outward, creating a visually appealing mosaic of colors and titles. The shelves are uniformly lit, casting a warm, inviting glow. Below the bookshelves, there are several wooden desks and chairs, arranged in a casual, open layout, with a few chairs scattered around, suggesting a relaxed and collaborative environment. One desk holds a blue water bottle, a notebook, and a laptop, adding a touch of modernity. The floor is a light, neutral color, complementing the overall warm and inviting atmosphere. The room is sparsely populated, with no people visible, allowing the focus to remain on the serene, intellectual setting."
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      2,
+      0,
+      1,
+      0,
+      "JoyTwoPipeline"
+    ],
+    [
+      2,
+      3,
+      0,
+      1,
+      1,
+      "IMAGE"
+    ],
+    [
+      3,
+      1,
+      0,
+      4,
+      0,
+      "STRING"
+    ],
+    [
+      4,
+      6,
+      0,
+      5,
+      0,
+      "JoyTwoPipeline"
+    ],
+    [
+      5,
+      7,
+      0,
+      5,
+      2,
+      "Extra_Options"
+    ],
+    [
+      6,
+      8,
+      0,
+      5,
+      1,
+      "IMAGE"
+    ],
+    [
+      7,
+      5,
+      0,
+      9,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "高级版本",
+      "bounding": [
+        938,
+        71,
+        1187,
+        654
+      ],
+      "color": "#3f789e",
+      "font_size": 22,
+      "flags": {}
+    },
+    {
+      "title": "默认版本",
+      "bounding": [
+        185,
+        103,
+        730,
+        516
+      ],
+      "color": "#3f789e",
+      "font_size": 22,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.9090909090909091,
+      "offset": [
+        -50.21843777518401,
+        55.7774770384695
+      ]
+    }
+  },
+  "version": 0.4
+}

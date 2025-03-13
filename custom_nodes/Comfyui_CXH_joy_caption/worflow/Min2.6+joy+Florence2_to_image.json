@@ -1,0 +1,992 @@
+{
+  "last_node_id": 37,
+  "last_link_id": 40,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "LoadImage",
+      "pos": {
+        "0": 500,
+        "1": 673
+      },
+      "size": {
+        "0": 558.8251953125,
+        "1": 765.508544921875
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2,
+            7,
+            8
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "mmexport1740026929175.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "CXH_HG_Model_Load",
+      "pos": {
+        "0": 1187,
+        "1": 286
+      },
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "pipe",
+          "type": "CXH_Hg_Pipe",
+          "links": [
+            6
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CXH_HG_Model_Load"
+      },
+      "widgets_values": [
+        "pzc163/MiniCPMv2_6-prompt-generator"
+      ],
+      "color": "#1b4669",
+      "bgcolor": "#29699c"
+    },
+    {
+      "id": 10,
+      "type": "CXH_DownloadAndLoadFlorence2Model",
+      "pos": {
+        "0": 1209,
+        "1": 1257
+      },
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "florence2_model",
+          "type": "FL2MODEL",
+          "links": [
+            9
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CXH_DownloadAndLoadFlorence2Model"
+      },
+      "widgets_values": [
+        "thwri/CogFlorence-2.2-Large",
+        "fp16",
+        "sdpa"
+      ],
+      "color": "#1b4669",
+      "bgcolor": "#29699c"
+    },
+    {
+      "id": 3,
+      "type": "Joy_caption_load",
+      "pos": {
+        "0": 1210,
+        "1": 785
+      },
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "JoyPipeline",
+          "type": "JoyPipeline",
+          "links": [
+            1
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Joy_caption_load"
+      },
+      "widgets_values": [
+        "unsloth/Meta-Llama-3.1-8B-bnb-4bit"
+      ],
+      "color": "#1b4669",
+      "bgcolor": "#29699c"
+    },
+    {
+      "id": 5,
+      "type": "easy showAnything",
+      "pos": {
+        "0": 1690,
+        "1": 854
+      },
+      "size": {
+        "0": 462.2198791503906,
+        "1": 255.30990600585938
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "type": "*",
+          "link": 3,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        "of an Asian woman in her twenties with a fair complexion, long, straight, dark hair, and an oval face. She has large, almond-shaped brown eyes with prominent eyelashes, and her eyebrows are neatly groomed. Her lips are full and naturally pink. She is wearing a light grey, long-sleeved top made of soft, slightly textured fabric. Her earrings are small, round, and gold, adding a touch of elegance to her simple attire. The background is blurred, but a part of a beige wall and a decorative object, possibly a framed artwork, are visible. The lighting is warm and soft, coming from the left side of the image, creating a gentle highlight on her face and slightly illuminating her hair. Her expression is neutral, with a slight hint of a soft smile, suggesting a relaxed and confident demeanor. The overall image conveys a sense of calm and elegance."
+      ]
+    },
+    {
+      "id": 11,
+      "type": "easy showAnything",
+      "pos": {
+        "0": 1640,
+        "1": 1455
+      },
+      "size": {
+        "0": 462.2198791503906,
+        "1": 255.30990600585938
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "type": "*",
+          "link": 11,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        "A close-up portrait of a young woman with long, dark hair. She wears a light gray t-shirt and has a neutral expression. The background is a plain, off-white wall with a decorative frame. The woman's makeup is subtle, with a hint of pink lipstick on her lips. The image style is candid and natural, capturing a moment of quiet reflection."
+      ]
+    },
+    {
+      "id": 2,
+      "type": "easy showAnything",
+      "pos": {
+        "0": 1687,
+        "1": 401
+      },
+      "size": {
+        "0": 390.0909423828125,
+        "1": 252.36358642578125
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "type": "*",
+          "link": 10,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        "A close-up portrait of a young woman with long, straight black hair cascading over her shoulders. She is wearing a light-colored, round-neck top, and her makeup is natural, highlighting her large, expressive eyes. The background is minimalistic, featuring a plain wall and a hint of a door frame, which suggests an indoor setting. The lighting is soft and even, casting a gentle glow on her face and accentuating her features without creating harsh shadows. The overall mood of the image is calm and serene, with a focus on the subject's peaceful expression and the simplicity of the setting."
+      ]
+    },
+    {
+      "id": 17,
+      "type": "EmptyLatentImage",
+      "pos": {
+        "0": 2781.264404296875,
+        "1": 1305.1424560546875
+      },
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            16
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ]
+    },
+    {
+      "id": 20,
+      "type": "DualCLIPLoader",
+      "pos": {
+        "0": 2938.824462890625,
+        "1": 345.3934326171875
+      },
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            19,
+            20
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DualCLIPLoader"
+      },
+      "widgets_values": [
+        "clip_l.safetensors",
+        "t5xxl_fp8_e4m3fn.safetensors",
+        "flux"
+      ]
+    },
+    {
+      "id": 18,
+      "type": "VAEDecode",
+      "pos": {
+        "0": 3517.880126953125,
+        "1": 717.0577392578125
+      },
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 17
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 21
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            18
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 21,
+      "type": "VAELoader",
+      "pos": {
+        "0": 3537,
+        "1": 401
+      },
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            21
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "flux_ae.safetensors"
+      ]
+    },
+    {
+      "id": 19,
+      "type": "PreviewImage",
+      "pos": {
+        "0": 3578,
+        "1": 878
+      },
+      "size": {
+        "0": 434.34344482421875,
+        "1": 426.2626647949219
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 18
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 14,
+      "type": "CheckpointLoaderSimple",
+      "pos": {
+        "0": 2368,
+        "1": 471
+      },
+      "size": {
+        "0": 315,
+        "1": 98
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            13
+          ]
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": null
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "flux1-dev-fp8.safetensors"
+      ]
+    },
+    {
+      "id": 9,
+      "type": "CXH_Min2_6_prompt_Run",
+      "pos": {
+        "0": 1177,
+        "1": 407
+      },
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pipe",
+          "type": "CXH_Hg_Pipe",
+          "link": 6
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            10
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CXH_Min2_6_prompt_Run"
+      },
+      "widgets_values": [
+        "A descriptive caption for this image ",
+        2048,
+        0.7,
+        369569,
+        "randomize",
+        [
+          false,
+          true
+        ]
+      ],
+      "color": "#1b4669",
+      "bgcolor": "#29699c"
+    },
+    {
+      "id": 12,
+      "type": "KSampler",
+      "pos": {
+        "0": 2786,
+        "1": 574
+      },
+      "size": {
+        "0": 557.9849243164062,
+        "1": 601.9077758789062
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 13
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 14
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 15
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 16
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            17
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        888,
+        "fixed",
+        20,
+        1,
+        "euler",
+        "simple",
+        1
+      ]
+    },
+    {
+      "id": 4,
+      "type": "Joy_caption",
+      "pos": {
+        "0": 1195,
+        "1": 897
+      },
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "joy_pipeline",
+          "type": "JoyPipeline",
+          "link": 1
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            3
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Joy_caption"
+      },
+      "widgets_values": [
+        "A descriptive caption for this image ",
+        2048,
+        0.7000000000000001,
+        false,
+        [
+          false,
+          true
+        ]
+      ],
+      "color": "#1b4669",
+      "bgcolor": "#29699c"
+    },
+    {
+      "id": 8,
+      "type": "CXH_Florence2Run",
+      "pos": {
+        "0": 1210,
+        "1": 1417
+      },
+      "size": {
+        "0": 400,
+        "1": 357
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 8
+        },
+        {
+          "name": "florence2_model",
+          "type": "FL2MODEL",
+          "link": 9
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null,
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "caption",
+          "type": "STRING",
+          "links": [
+            11
+          ],
+          "slot_index": 2,
+          "shape": 3
+        },
+        {
+          "name": "data",
+          "type": "JSON",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CXH_Florence2Run"
+      },
+      "widgets_values": [
+        "",
+        "more_detailed_caption",
+        true,
+        false,
+        2048,
+        3,
+        true,
+        "",
+        831169,
+        "randomize",
+        [
+          false,
+          true
+        ]
+      ],
+      "color": "#1b4669",
+      "bgcolor": "#29699c"
+    },
+    {
+      "id": 16,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 2288,
+        "1": 1003
+      },
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 20
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            15
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "",
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "id": 15,
+      "type": "CLIPTextEncode",
+      "pos": {
+        "0": 2279,
+        "1": 729
+      },
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 19
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            14
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "",
+        [
+          false,
+          true
+        ]
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      3,
+      0,
+      4,
+      0,
+      "JoyPipeline"
+    ],
+    [
+      2,
+      1,
+      0,
+      4,
+      1,
+      "IMAGE"
+    ],
+    [
+      3,
+      4,
+      0,
+      5,
+      0,
+      "*"
+    ],
+    [
+      6,
+      7,
+      0,
+      9,
+      0,
+      "CXH_Hg_Pipe"
+    ],
+    [
+      7,
+      1,
+      0,
+      9,
+      1,
+      "IMAGE"
+    ],
+    [
+      8,
+      1,
+      0,
+      8,
+      0,
+      "IMAGE"
+    ],
+    [
+      9,
+      10,
+      0,
+      8,
+      1,
+      "FL2MODEL"
+    ],
+    [
+      10,
+      9,
+      0,
+      2,
+      0,
+      "*"
+    ],
+    [
+      11,
+      8,
+      2,
+      11,
+      0,
+      "*"
+    ],
+    [
+      13,
+      14,
+      0,
+      12,
+      0,
+      "MODEL"
+    ],
+    [
+      14,
+      15,
+      0,
+      12,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      15,
+      16,
+      0,
+      12,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      16,
+      17,
+      0,
+      12,
+      3,
+      "LATENT"
+    ],
+    [
+      17,
+      12,
+      0,
+      18,
+      0,
+      "LATENT"
+    ],
+    [
+      18,
+      18,
+      0,
+      19,
+      0,
+      "IMAGE"
+    ],
+    [
+      19,
+      20,
+      0,
+      15,
+      0,
+      "CLIP"
+    ],
+    [
+      20,
+      20,
+      0,
+      16,
+      0,
+      "CLIP"
+    ],
+    [
+      21,
+      21,
+      0,
+      18,
+      1,
+      "VAE"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "florence2",
+      "bounding": [
+        1148,
+        1164,
+        1041,
+        586
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "Joy_caption",
+      "bounding": [
+        1154,
+        699,
+        1032,
+        449
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "title": "Min2_6",
+      "bounding": [
+        1156,
+        167,
+        928,
+        501
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6209213230591554,
+      "offset": [
+        -748.1330558433832,
+        -218.6851038093873
+      ]
+    }
+  },
+  "version": 0.4
+}
