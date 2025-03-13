@@ -14,7 +14,7 @@
         "1": 126
       },
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -51,66 +51,18 @@
       ]
     },
     {
-      "id": 7,
-      "type": "Joy_extra_options",
-      "pos": {
-        "0": 948.4666748046875,
-        "1": 243.53334045410156
-      },
-      "size": {
-        "0": 640.561767578125,
-        "1": 470.9009704589844
-      },
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "Extra_Options",
-          "type": "Extra_Options",
-          "links": [
-            5
-          ],
-          "label": "附加选项"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Joy_extra_options"
-      },
-      "widgets_values": [
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        true,
-        false,
-        false,
-        false,
-        false
-      ]
-    },
-    {
       "id": 5,
       "type": "Joy_caption_two_advanced",
       "pos": {
         "0": 1612.466552734375,
-        "1": 130.53334045410156
+        "1": 139.1333465576172
       },
       "size": {
         "0": 315,
         "1": 242
       },
       "flags": {},
-      "order": 5,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -157,16 +109,48 @@
       ]
     },
     {
+      "id": 2,
+      "type": "Joy_caption_two_load",
+      "pos": {
+        "0": 194,
+        "1": 174
+      },
+      "size": {
+        "0": 357.947265625,
+        "1": 58
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "JoyTwoPipeline",
+          "type": "JoyTwoPipeline",
+          "links": [
+            1
+          ],
+          "label": "JoyCaptionTwo"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Joy_caption_two_load"
+      },
+      "widgets_values": [
+        "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit"
+      ]
+    },
+    {
       "id": 3,
       "type": "LoadImage",
       "pos": {
-        "0": 199.44940185546875,
-        "1": 279.5355224609375
+        "0": 199,
+        "1": 280
       },
-      "size": {
-        "0": 350.9436950683594,
-        "1": 314
-      },
+      "size": [
+        370.1999999999998,
+        587.9
+      ],
       "flags": {},
       "order": 1,
       "mode": 0,
@@ -196,18 +180,140 @@
       ]
     },
     {
+      "id": 4,
+      "type": "ShowText|pysssss",
+      "pos": {
+        "0": 581.449462890625,
+        "1": 350.5355224609375
+      },
+      "size": [
+        319.95053710937486,
+        516.2644775390625
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 3,
+          "widget": {
+            "name": "text"
+          },
+          "label": "文本"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6,
+          "label": "字符串"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "This is a photograph of a cozy, well-lit library or study room with an eclectic, vintage ambiance. The room features a tall, black metal bookshelf filled with an array of books, mostly hardcover, with varying sizes and colors, predominantly beige and brown. The books are neatly arranged, with some spines facing outward, showcasing titles and authors. The shelves are lit by warm, ambient lighting, casting a soft glow on the books. In the foreground, there are wooden tables with chairs, some occupied by closed laptops, and a few books and notebooks scattered on the tables. A small blue water bottle and a red notebook are visible on one of the tables. The room has a warm, inviting atmosphere, with a mix of modern and vintage furniture. The overall aesthetic is a blend of intellectual elegance and comfort."
+      ]
+    },
+    {
+      "id": 6,
+      "type": "Joy_caption_two_load",
+      "pos": {
+        "0": 949,
+        "1": 152
+      },
+      "size": [
+        615.7,
+        62.49999999999997
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "JoyTwoPipeline",
+          "type": "JoyTwoPipeline",
+          "links": [
+            4
+          ],
+          "label": "JoyCaptionTwo"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Joy_caption_two_load"
+      },
+      "widgets_values": [
+        "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "Joy_extra_options",
+      "pos": {
+        "0": 951,
+        "1": 256
+      },
+      "size": [
+        624.7,
+        442
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "Extra_Options",
+          "type": "Extra_Options",
+          "links": [
+            5
+          ],
+          "label": "附加选项"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Joy_extra_options"
+      },
+      "widgets_values": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
       "id": 8,
       "type": "LoadImage",
       "pos": {
-        "0": 1599,
-        "1": 370
+        "0": 1314,
+        "1": 457
       },
-      "size": {
-        "0": 210,
-        "1": 336.5890197753906
-      },
+      "size": [
+        333.5999999999999,
+        510.79999999999995
+      ],
       "flags": {},
-      "order": 2,
+      "order": 4,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -235,82 +341,18 @@
       ]
     },
     {
-      "id": 6,
-      "type": "Joy_caption_two_load",
-      "pos": {
-        "0": 949,
-        "1": 144
-      },
-      "size": {
-        "0": 639.5408325195312,
-        "1": 58.497196197509766
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "JoyTwoPipeline",
-          "type": "JoyTwoPipeline",
-          "links": [
-            4
-          ],
-          "label": "JoyCaptionTwo"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Joy_caption_two_load"
-      },
-      "widgets_values": [
-        "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit"
-      ]
-    },
-    {
-      "id": 2,
-      "type": "Joy_caption_two_load",
-      "pos": {
-        "0": 194,
-        "1": 174
-      },
-      "size": {
-        "0": 357.947265625,
-        "1": 58
-      },
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "JoyTwoPipeline",
-          "type": "JoyTwoPipeline",
-          "links": [
-            1
-          ],
-          "label": "JoyCaptionTwo"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Joy_caption_two_load"
-      },
-      "widgets_values": [
-        "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit"
-      ]
-    },
-    {
       "id": 9,
       "type": "ShowText|pysssss",
       "pos": {
-        "0": 1818.466552734375,
-        "1": 377.5333251953125
+        "0": 1676,
+        "1": 462
       },
-      "size": {
-        "0": 297.46295166015625,
-        "1": 329.3807067871094
-      },
+      "size": [
+        368.5,
+        492.79999999999995
+      ],
       "flags": {},
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -338,49 +380,7 @@
       },
       "widgets_values": [
         "",
-        "photograph of a cozy, dimly-lit library or study room with a warm, inviting atmosphere. The room is filled with wooden tables and chairs, all facing a massive bookshelf that takes up the entire background. The bookshelf is packed with books of various sizes and colors, some with visible titles. The lighting is soft and warm, creating a gentle glow that highlights the book spines. The walls are a muted gray, adding to the serene ambiance. A small, framed picture and a few decorative items are placed on the bookshelf. The foreground features a few wooden tables with scattered books, a notepad, and a pen, indicating an active workspace. The camera likely used is a DSLR with a moderate depth of field, keeping the bookshelf in sharp focus while slightly blurring the tables and chairs. Aperture around f/4, shutter speed around 1/60 sec, ISO around 400. The overall feel is one of intellectual curiosity and comfort. The photo captures the essence of a quiet, studious environment, perfect for reading or research."
-      ]
-    },
-    {
-      "id": 4,
-      "type": "ShowText|pysssss",
-      "pos": {
-        "0": 581.449462890625,
-        "1": 350.5355224609375
-      },
-      "size": {
-        "0": 304.5310363769531,
-        "1": 218.3123016357422
-      },
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 3,
-          "widget": {
-            "name": "text"
-          },
-          "label": "文本"
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": null,
-          "shape": 6,
-          "label": "字符串"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ShowText|pysssss"
-      },
-      "widgets_values": [
-        "",
-        "This photograph captures the interior of a cozy, well-lit library or study space. The room features an expansive, black metal bookshelf filled with a variety of books, their spines facing outward, creating a visually appealing mosaic of colors and titles. The shelves are uniformly lit, casting a warm, inviting glow. Below the bookshelves, there are several wooden desks and chairs, arranged in a casual, open layout, with a few chairs scattered around, suggesting a relaxed and collaborative environment. One desk holds a blue water bottle, a notebook, and a laptop, adding a touch of modernity. The floor is a light, neutral color, complementing the overall warm and inviting atmosphere. The room is sparsely populated, with no people visible, allowing the focus to remain on the serene, intellectual setting."
+        "cozy library, photo, taken with a DSLR camera, likely a Canon EOS 5D Mark IV, f/2.8 aperture, 1/60 shutter speed, ISO 400, medium depth of field, background in focus, warm lighting, bookshelves filled with books, mix of hardcover and paperback, various book sizes, some books with visible titles, organized but eclectic, wooden furniture, tables with papers, notebooks, and a few books, some chairs with cushions, comfortable reading nook, soft textures, warm and inviting atmosphere, neutral color palette with earthy tones, cozy reading spot, no people, library setting, soft shadows, natural light, book spines visible, bookshelf in the background, warm lighting from above, cozy corner, books stacked neatly, inviting atmosphere, book lover's paradise, bookshelf filled with a mix of fiction and non-fiction, books on different subjects, cozy reading corner, books stacked horizontally and vertically, inviting library, cozy library nook, book lover's sanctuary, book-filled shelves, book lover's retreat, book-filled library, cozy book nook, book-filled corner, book-filled room, book-filled space, book-filled area, book-filled environment, book-filled setting, book-filled location, book-filled place, book-filled spot, book-filled area, book-filled space, book-filled environment, book-filled setting, book-filled location, book-filled place, book-filled spot, book-filled area, book-filled space, book-filled"
       ]
     }
   ],
@@ -444,24 +444,24 @@
   ],
   "groups": [
     {
-      "title": "高级版本",
+      "title": "默认版本",
       "bounding": [
-        938,
-        71,
-        1187,
-        654
+        185,
+        103,
+        737,
+        785
       ],
       "color": "#3f789e",
       "font_size": 22,
       "flags": {}
     },
     {
-      "title": "默认版本",
+      "title": "高级版本",
       "bounding": [
-        185,
-        103,
-        730,
-        516
+        938,
+        80,
+        1188,
+        903
       ],
       "color": "#3f789e",
       "font_size": 22,
@@ -473,8 +473,8 @@
     "ds": {
       "scale": 0.9090909090909091,
       "offset": [
-        -50.21843777518401,
-        55.7774770384695
+        -142.3999999999998,
+        -51.69999999999996
       ]
     }
   },
