@@ -14,7 +14,7 @@
         "1": 200
       },
       "flags": {},
-      "order": 4,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -46,7 +46,7 @@
         "A descriptive caption for this image ",
         2048,
         0.7,
-        744372,
+        879607,
         "randomize"
       ],
       "color": "#1b4669",
@@ -59,12 +59,12 @@
         "0": 1659,
         "1": 376
       },
-      "size": [
-        395.44451904296875,
-        269.5555419921875
-      ],
+      "size": {
+        "0": 395.44451904296875,
+        "1": 269.5555419921875
+      },
       "flags": {},
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -89,7 +89,7 @@
       },
       "widgets_values": [
         "",
-        "The image captures a serene and inviting bookstore, bathed in soft, warm light that accentuates the rich, earthy tones of the wooden shelves and furniture. The shelves, filled with a diverse collection of books, are meticulously arranged, creating a sense of order amidst the literary chaos. Each book, with its unique cover and spine, adds a splash of color to the otherwise monochromatic palette, hinting at the myriad of stories and knowledge contained within their pages. The perspective of the photo, taken from a low angle, enhances the grandeur of the bookshelf, making it appear as a towering monument to the written word. The overall ambiance is one of quiet contemplation and intellectual curiosity, inviting visitors to lose themselves in the world of literature."
+        "A solitary lioness stands poised in a vast savanna, her gaze fixed on the camera, embodying both the grace and the raw power of the African wilderness. The golden hues of the grass around her echo the warm tones of her coat, creating a harmonious blend of colors that speaks to the natural beauty of her habitat. In the distance, the horizon stretches out, hinting at the expansive nature of her domain. This image captures not just a moment, but a story of survival and majesty in the wild."
       ]
     },
     {
@@ -104,7 +104,7 @@
         "1": 200
       },
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -140,46 +140,6 @@
       ],
       "color": "#1b4669",
       "bgcolor": "#29699c"
-    },
-    {
-      "id": 13,
-      "type": "ShowText|pysssss",
-      "pos": {
-        "0": 1675,
-        "1": 823
-      },
-      "size": [
-        450.4077258422849,
-        289.8758713806153
-      ],
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 13,
-          "widget": {
-            "name": "text"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": null,
-          "shape": 6
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ShowText|pysssss"
-      },
-      "widgets_values": [
-        "",
-        "2022 photograph depicting a cozy café interior. The photograph captures a spacious, warmly lit café with a modern, minimalist design. The backdrop features a large wall of wooden bookshelves filled with an eclectic mix of books, ranging from thick hardcovers to thin paperbacks, in various colors and sizes. Some books are propped at an angle, adding an informal touch. The shelves are arranged in a grid pattern, with books stacked vertically and horizontally, creating a visually pleasing arrangement. \n\nIn the foreground, a wooden table with a light brown finish is set with a few chairs, including a high-backed chair with a cushioned seat and armrests. To the right, there's another table with a cushioned armchair, and a laptop is placed on it. The lighting is soft and warm, coming from black, industrial-style pendant lights hanging from the ceiling. The floor is a light beige, adding to the serene ambiance. A small white sign with a black font is placed on the table, indicating a menu or specials. The overall atmosphere is inviting, with a blend of functionality and comfort, typical of a modern café setting."
-      ]
     },
     {
       "id": 8,
@@ -249,7 +209,7 @@
         3,
         true,
         "",
-        919203,
+        389035,
         "randomize"
       ],
       "color": "#1b4669",
@@ -262,10 +222,10 @@
         "0": 1682.249267578125,
         "1": 1394.6846923828125
       },
-      "size": [
-        473.0000373547359,
-        334.8888787451174
-      ],
+      "size": {
+        "0": 473.0000305175781,
+        "1": 334.8888854980469
+      },
       "flags": {},
       "order": 9,
       "mode": 0,
@@ -292,49 +252,7 @@
       },
       "widgets_values": [
         "",
-        "A photograph of a modern, well-lit interior space, likely a bookstore or cafe. The main subject is a large, multi-level shelving unit filled with books of various sizes and colors. The books are neatly arranged on the shelves, some displaying photographs and text. The color palette consists primarily of warm browns, golds, and whites, with accents of blue and green from the photographs. Wooden tables and chairs with leather upholstery surround the bookshelf, and the floor is covered with a light-colored carpet. The overall atmosphere is cozy and inviting, with a sense of order and history."
-      ]
-    },
-    {
-      "id": 1,
-      "type": "LoadImage",
-      "pos": {
-        "0": 500,
-        "1": 673
-      },
-      "size": {
-        "0": 558.8251953125,
-        "1": 765.508544921875
-      },
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            2,
-            7,
-            8
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "photo-1740953794738-5cc7f8588d1e.jpg",
-        "image"
+        "A vivid portrayal of a lioness in a savannah setting. The lioness stands in a field of tall, golden-brown grasses. The sky is a clear blue, indicating either early morning or late afternoon. Her fur is a mix of light and dark shades, with lighter patches on her face and chest. Her eyes are alert and focused, conveying a sense of curiosity or alertness. The grasses sway gently in the breeze, and the background is blurred, highlighting the lioness. The image style is candid and natural, capturing the essence of a serene savannah."
       ]
     },
     {
@@ -349,7 +267,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -384,7 +302,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -419,7 +337,7 @@
         "1": 106
       },
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -443,6 +361,88 @@
       ],
       "color": "#1b4669",
       "bgcolor": "#29699c"
+    },
+    {
+      "id": 1,
+      "type": "LoadImage",
+      "pos": {
+        "0": 500,
+        "1": 673
+      },
+      "size": {
+        "0": 558.8251953125,
+        "1": 765.508544921875
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2,
+            7,
+            8
+          ],
+          "slot_index": 0,
+          "shape": 3
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "photo-1740927726070-26542d1a9b04.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 13,
+      "type": "ShowText|pysssss",
+      "pos": {
+        "0": 1675,
+        "1": 823
+      },
+      "size": {
+        "0": 450.40771484375,
+        "1": 289.8758850097656
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 13,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "2021 photograph, capturing a majestic lioness standing tall amidst a vast, golden savannah landscape under a clear, blue sky. The lioness, with her light brown fur, is the focal point of the image, standing in the center of the frame. Her expression is calm yet alert, with her eyes partially closed and her head slightly tilted to the right. Her mane, slightly darker than her body fur, frames her face, enhancing her regal appearance. The savannah grass surrounding her is tall and dry, with a texture that appears slightly brittle under the bright sunlight. In the background, the horizon stretches out, with a sparse line of green vegetation marking the edge of the savannah, and a hint of distant mountains or hills under the clear sky. The overall color palette of the image is dominated by warm earthy tones, with the lioness and the grass blending harmoniously against the vast, open landscape. The image is a high-resolution photograph, providing a crisp, detailed view of the scene, capturing the essence of the lioness in her natural habitat."
+      ]
     }
   ],
   "links": [
@@ -521,12 +521,12 @@
   ],
   "groups": [
     {
-      "title": "Min2_6",
+      "title": "florence2",
       "bounding": [
-        1156,
-        167,
-        928,
-        501
+        1148,
+        1164,
+        1041,
+        586
       ],
       "color": "#3f789e",
       "font_size": 24,
@@ -545,12 +545,12 @@
       "flags": {}
     },
     {
-      "title": "florence2",
+      "title": "Min2_6",
       "bounding": [
-        1148,
-        1164,
-        1041,
-        586
+        1156,
+        167,
+        928,
+        501
       ],
       "color": "#3f789e",
       "font_size": 24,
@@ -560,10 +560,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.751314800901578,
+      "scale": 0.5644739300537776,
       "offset": [
-        -265.4873295863297,
-        -509.444728163905
+        86.38593311570168,
+        -168.0497945041334
       ]
     }
   },

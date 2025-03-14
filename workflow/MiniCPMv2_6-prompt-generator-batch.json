@@ -40,7 +40,9 @@
       "widgets_values": [
         "",
         "\"Imagine a serene coastal village nestled at the foot of towering, mist-shrouded mountains. In the heart of this picturesque setting, a quaint red wooden building with a sloping roof sits adjacent to a sturdy wooden dock. A white fishing boat named 'Elltor Nusfjord' is moored at the dock, its hull adorned with green accents and equipped with various navigational instruments. The calm waters reflect the overcast sky, adding to the tranquil atmosphere. The village's rustic charm is further accentuated by the lush greenery that blankets the mountainous backdrop, creating a harmonious blend of human habitation and natural beauty.\"",
-        "In a futuristic, neon-lit cityscape, a solitary figure stands poised on a rooftop, bathed in the glow of purple and blue lights. The individual, clad in a sleek, form-fitting black outfit, strikes a dramatic pose with one hand raised to their head, as if shielding their eyes from the radiant hues. Their gaze is directed towards the camera, exuding an air of enigmatic confidence. The background is a blur of motion, suggesting the swift passage of time or perhaps the rapid movement of the city's inhabitants. The overall atmosphere is one of mystery and intrigue, as if the figure is a guardian of this vibrant, otherworldly metropolis."
+        "In the heart of a bustling Asian city, the night comes alive with a symphony of lights and activity. The streets are lined with towering buildings, their facades illuminated by a myriad of colorful signs and neon lights. One such sign, glowing with a vibrant red and green hue, stands out prominently against the backdrop of the cityscape. This sign, adorned with intricate Chinese characters, marks the entrance to a bustling market teeming with life and energy. The market is a hive of activity, with vendors selling a variety of goods, from fresh produce to exotic spices. The air is filled with the tantalizing aroma of street food, and the sounds of chatter and laughter fill the night. Amidst the hustle and bustle, a red bus makes its way through the crowded streets, adding to the dynamic energy of the scene. This image captures the essence of urban life in Asia, where tradition and modernity coexist in a vibrant tapestry of colors and sounds.",
+        "In a futuristic, neon-lit cityscape, a solitary figure stands poised on a rooftop, bathed in the glow of purple and blue lights. The individual, clad in a sleek, form-fitting black outfit, strikes a dramatic pose with one hand raised to their head, as if shielding their eyes from the radiant hues. Their gaze is directed towards the camera, exuding an air of enigmatic confidence. The background is a blur of motion, suggesting the swift passage of time or perhaps the rapid movement of the city's inhabitants. The overall atmosphere is one of mystery and intrigue, as if the figure is a guardian of this vibrant, otherworldly metropolis.",
+        "In the heart of a bustling metropolis, a young woman with long, flowing black hair and piercing blue eyes is captured in a moment of pure exhilaration. She's astride a sleek, red motorcycle, its polished surface gleaming under the city lights. Dressed in a vibrant red jacket, a stylish black skirt, and thigh-high boots, she embodies the spirit of freedom and adventure. Her hair, caught in the wind, adds a sense of motion to the scene. The background is awash in a bright turquoise hue, providing a stark contrast to the urban setting and highlighting the woman and her motorcycle as the focal point. The composition is dynamic, with the motorcycle angled slightly to the left, giving the impression that it's ready to roar into action at any moment. The overall effect is one of energy, excitement, and the thrill of the open road."
       ]
     },
     {
@@ -133,7 +135,7 @@
         "Node name for S&R": "Prompt_Generator"
       },
       "widgets_values": [
-        "F:\\Picture\\MiniCPM",
+        "D:\\Picture\\MiniCPM",
         "long_prompt",
         2048,
         3,
@@ -141,19 +143,7 @@
         1.05,
         "",
         "",
-        "",
-        [
-          false,
-          true
-        ],
-        [
-          false,
-          true
-        ],
-        [
-          false,
-          true
-        ]
+        ""
       ]
     },
     {
@@ -204,7 +194,7 @@
       "widgets_values": [
         "",
         "",
-        "F:\\Picture\\MiniCPM",
+        "D:\\Picture\\MiniCPM",
         "MiniCPMv2_6",
         "overwrite"
       ]
@@ -240,10 +230,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.1000000000000003,
+      "scale": 1,
       "offset": [
-        -281.9191117720173,
-        -14.907637850491541
+        -236,
+        -76
       ]
     },
     "workspace_info": {

@@ -170,50 +170,6 @@
       ]
     },
     {
-      "id": 6,
-      "type": "Batch_joy_caption_two",
-      "pos": {
-        "0": 990.22216796875,
-        "1": 672.0001220703125
-      },
-      "size": {
-        "0": 315,
-        "1": 154
-      },
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "joy_two_pipeline",
-          "type": "JoyTwoPipeline",
-          "link": 5,
-          "label": "JoyCaptionTwo"
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            6
-          ],
-          "slot_index": 0,
-          "label": "处理结果"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Batch_joy_caption_two"
-      },
-      "widgets_values": [
-        "F:\\Picture\\Joy_Caption",
-        "",
-        "Training Prompt",
-        "160",
-        true
-      ]
-    },
-    {
       "id": 8,
       "type": "Batch_joy_caption_two_advanced",
       "pos": {
@@ -253,7 +209,7 @@
         "Node name for S&R": "Batch_joy_caption_two_advanced"
       },
       "widgets_values": [
-        "F:\\Picture\\Joy_Caption_Advanced",
+        "D:\\Picture\\Joy_Caption_Advanced",
         "",
         false,
         "",
@@ -267,6 +223,50 @@
         0.6,
         "",
         ""
+      ]
+    },
+    {
+      "id": 6,
+      "type": "Batch_joy_caption_two",
+      "pos": {
+        "0": 990.22216796875,
+        "1": 672.0001220703125
+      },
+      "size": {
+        "0": 315,
+        "1": 154
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "joy_two_pipeline",
+          "type": "JoyTwoPipeline",
+          "link": 5,
+          "label": "JoyCaptionTwo"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            6
+          ],
+          "slot_index": 0,
+          "label": "处理结果"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Batch_joy_caption_two"
+      },
+      "widgets_values": [
+        "D:\\Picture\\Joy_Caption",
+        "",
+        "Training Prompt",
+        "160",
+        true
       ]
     }
   ],

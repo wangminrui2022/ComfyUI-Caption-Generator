@@ -3,53 +3,16 @@
   "last_link_id": 2,
   "nodes": [
     {
-      "id": 2,
-      "type": "LoadImage",
-      "pos": {
-        "0": 58,
-        "1": 144
-      },
-      "size": [
-        575,
-        647
-      ],
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            1
-          ]
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "example.png",
-        "image"
-      ]
-    },
-    {
       "id": 3,
       "type": "ShowText|pysssss",
       "pos": {
         "0": 1253,
         "1": 140
       },
-      "size": [
-        442,
-        526
-      ],
+      "size": {
+        "0": 442,
+        "1": 526
+      },
       "flags": {},
       "order": 2,
       "mode": 0,
@@ -75,7 +38,8 @@
         "Node name for S&R": "ShowText|pysssss"
       },
       "widgets_values": [
-        ""
+        "",
+        "1girl, solo, long_hair, looking_at_viewer, skirt, brown_hair, dress, bare_shoulders, brown_eyes, standing, outdoors, sleeveless, day, blurry, bare_arms, blurry_background, short_dress, nature, camisole, arm_at_side, realistic, road, yellow_dress, yellow_skirt, photo_background, path, hand_on_own_shoulder, hand_on_own_neck, sidewalk, asian, photorealistic"
       ]
     },
     {
@@ -85,10 +49,10 @@
         "0": 687,
         "1": 140
       },
-      "size": [
-        513,
-        674
-      ],
+      "size": {
+        "0": 513,
+        "1": 674
+      },
       "flags": {},
       "order": 1,
       "mode": 0,
@@ -106,8 +70,8 @@
           "links": [
             2
           ],
-          "shape": 6,
-          "slot_index": 0
+          "slot_index": 0,
+          "shape": 6
         }
       ],
       "properties": {
@@ -119,7 +83,45 @@
         0.85,
         false,
         false,
-        ""
+        "",
+        "1girl, solo, long_hair, looking_at_viewer, skirt, brown_hair, dress, bare_shoulders, brown_eyes, standing, outdoors, sleeveless, day, blurry, bare_arms, blurry_background, short_dress, nature, camisole, arm_at_side, realistic, road, yellow_dress, yellow_skirt, photo_background, path, hand_on_own_shoulder, hand_on_own_neck, sidewalk, asian, photorealistic"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "LoadImage",
+      "pos": {
+        "0": 58,
+        "1": 144
+      },
+      "size": {
+        "0": 575,
+        "1": 647
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "photo-1503104834685-7205e8607eb9.jpg",
+        "image"
       ]
     }
   ],
@@ -145,10 +147,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1,
+      "scale": 0.9090909090909091,
       "offset": [
-        -1,
-        -2
+        121.70000000000005,
+        53.89999999999998
       ]
     }
   },

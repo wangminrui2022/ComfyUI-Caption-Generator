@@ -99,6 +99,48 @@
       ]
     },
     {
+      "id": 11,
+      "type": "LoadImage",
+      "pos": {
+        "0": 220,
+        "1": 226
+      },
+      "size": {
+        "0": 459.265380859375,
+        "1": 510.9318542480469
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            23
+          ],
+          "slot_index": 0,
+          "shape": 3,
+          "label": "图像"
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3,
+          "label": "遮罩"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "wallhaven-1p6d79.jpg",
+        "image"
+      ]
+    },
+    {
       "id": 12,
       "type": "ShowText|pysssss",
       "pos": {
@@ -137,49 +179,7 @@
       },
       "widgets_values": [
         "",
-        "In a dystopian future, a group of young female soldiers, clad in a mix of futuristic combat gear and school uniforms, stand poised for battle. The sky above them is a dramatic canvas of stormy clouds, hinting at the chaos that surrounds them. Each soldier is armed with advanced weaponry, their determined expressions reflecting the gravity of their mission. The ruins of a once-thriving city loom in the background, a stark reminder of the world they are fighting to protect. The composition of the image captures the tension and resilience of these young warriors, ready to face whatever comes their way."
-      ]
-    },
-    {
-      "id": 11,
-      "type": "LoadImage",
-      "pos": {
-        "0": 220,
-        "1": 226
-      },
-      "size": {
-        "0": 459.265380859375,
-        "1": 510.9318542480469
-      },
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            23
-          ],
-          "slot_index": 0,
-          "shape": 3,
-          "label": "图像"
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3,
-          "label": "遮罩"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "photo-1740953794738-5cc7f8588d1e.jpg",
-        "image"
+        "A young girl, adorned in traditional Japanese attire, stands gracefully on a vibrant red bridge. She holds a delicate parasol, shielding herself from the gentle rain that falls around her. The bridge, intricately designed with gold accents, spans over a tranquil river, reflecting the soft glow of the lanterns that line its sides. In the background, a picturesque village nestles amidst lush, autumnal trees, their fiery hues contrasting beautifully with the misty mountains that loom in the distance. The entire scene is bathed in a soft, ethereal light, creating an atmosphere of serene beauty and timeless elegance."
       ]
     }
   ],
