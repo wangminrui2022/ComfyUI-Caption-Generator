@@ -68,11 +68,7 @@ import utils.extra_config
 if os.name == "nt":
     logging.getLogger("xformers").addFilter(lambda record: 'A matching Triton is not available' not in record.getMessage())
 
-from app_start import AppStart
 if __name__ == "__main__":
-    # 免责申明对话框
-    appStart=AppStart()
-        
     if args.cuda_device is not None:
         os.environ['CUDA_VISIBLE_DEVICES'] = str(args.cuda_device)
         logging.info("Set cuda device to: {}".format(args.cuda_device))
